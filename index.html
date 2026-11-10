@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Drill 2</title>
+    
+    <!-- Google Font: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bg-dark-blue {
+            background-color: #0b2545 !important;
+        }
+        .btn-custom-blue {
+            background-color: #134074;
+            color: white;
+            border: none;
+        }
+        .btn-custom-blue:hover {
+            background-color: #0b2545;
+            color: white;
+        }
+        .hero { 
+            background: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/8048edd1-98cc-42df-b46b-905a84cd33dc/CASA+PROGRAM+5+-+18+copy.jpg?format=2500w') center/cover; 
+            padding: 80px 20px; 
+        }
+        .hero-card { 
+            background: rgba(255, 255, 255, 0.95); 
+            max-width: 800px; 
+            margin: auto; 
+            border-left: 5px solid #134074;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navbar Component -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="Logo" width="40" height="40" class="rounded-circle me-2">
+                OBMC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Enroll</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-custom-blue" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Header (Hero Image) -->
+    <header class="hero">
+        <div class="hero-card p-4 rounded shadow">
+            <h1 class="fw-bold" style="color: #0b2545;">Home Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Operation Brotherhood Montessori Center provides quality education across its various campuses.</p>
+        </div>
+    </header>
+
+    <!-- 3. Campuses -->
+    <section class="container my-5 text-center">
+        <h2 class="mb-4 fw-bold" style="color: #0b2545;">Campuses</h2>
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-4"><div class="p-3 border bg-light rounded fw-semibold">Greenhills</div></div>
+            <div class="col-md-4"><div class="p-3 border bg-light rounded fw-semibold">Sta. Ana</div></div>
+            <div class="col-md-4"><div class="p-3 border bg-light rounded fw-semibold">Las Piñas</div></div>
+            <div class="col-md-4"><div class="p-3 border bg-light rounded fw-semibold">Angeles</div></div>
+            <div class="col-md-4"><div class="p-3 border bg-light rounded fw-semibold">Fairview</div></div>
+        </div>
+    </section>
+
+    <!-- 4. Footer -->
+    <footer class="bg-dark-blue text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 OBMC. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
